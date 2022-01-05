@@ -1,23 +1,23 @@
 # Internet_hw3
 
-##題目要求
+## 題目要求
 pcap讀檔與統計程式
 
 請撰寫一個pcap封包檔讀檔程式，具有下列幾項功能。
 
-    *可在command option使用-r pcap_file，從pcap_file中讀取封包。
+    * 可在command option使用-r pcap_file，從pcap_file中讀取封包。
 
-    *對每個讀進來的封包，顯示其時間戳記(timestamp, 以年、月、日、時、分、秒為單PL)。
+    * 對每個讀進來的封包，顯示其時間戳記(timestamp, 以年、月、日、時、分、秒為單PL)。
     
-    *對每個讀進來的封包，顯示其來源的MAC位址、目的MAC位址、Ethernet type欄位
+    * 對每個讀進來的封包，顯示其來源的MAC位址、目的MAC位址、Ethernet type欄位
 
-    *若封包是IP封包，還可以顯示來源IP位址與目的IP位址。
+    * 若封包是IP封包，還可以顯示來源IP位址與目的IP位址。
 
-    *若封包是TCP/UDP封包，還可以顯示TCP/UDP的port號碼(含顯示是TCP還是UDP)。
+    * 若封包是TCP/UDP封包，還可以顯示TCP/UDP的port號碼(含顯示是TCP還是UDP)。
 
-    *可統計每對(來源IP,目的IP)的封包數量(若不是IP封包則略過不計)，並顯示出來。
+    * 可統計每對(來源IP,目的IP)的封包數量(若不是IP封包則略過不計)，並顯示出來。
 
-##程式流程
+## 程式流程
 
 1.設定讀取封包的基礎設定。
 
@@ -33,6 +33,6 @@ pcap讀檔與統計程式
 
 4.等pcap_loop讀完pcap_file中的封包，或是pcap_num個封包後，輸出每對(來源IP,目的IP)的封包數量。
 
-##希望加分
+## 希望加分
 
 多做了可以統計每對(來源IP,目的IP)的封包數量(若不是IP封包則略過不計)，並顯示出來的功能，希望加一點分。
